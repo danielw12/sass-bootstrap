@@ -1,0 +1,230 @@
+@import "zmienne";
+@import "mixiny";
+
+
+/*header*/
+
+
+
+div.header {
+    color: $white-font;
+    position: relative;
+
+    div.pudelko {
+        @include absolute-center;
+        text-align: center;
+    }
+}
+
+/*services*/
+
+div.drugi {
+    text-align: center;
+}
+
+div.ikony {
+    text-align: center;
+
+    div.kolko {
+        @include medium-circle;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+
+        i.ikony-services {
+            color: white;
+            transition: all 0.70s;
+            @include absolute-center;
+        }
+    }
+    div.kolko:hover {
+        background-color: white;
+        transition: all 0.70s;
+        transform: rotate(720deg);
+    }
+    div.kolko:hover > i {
+        color: aqua;
+    }
+}
+
+/*portfolio*/
+
+div.portfolio {
+    padding: 20px;
+    background-color: gainsboro;
+    text-align: center;
+
+    div.portfolio-box {
+        height: 320px;
+
+        div.tlo {
+            height: 300px;
+            background-color: white;
+
+            div.border {
+                overflow: hidden;
+
+                div.pictures {
+                    height: 200px;
+                    background-position: center;
+                    position: relative;
+                    transition-duration: 1s;
+
+                    div.mask {
+                        height: 200px;
+                        opacity: 0;
+                        background-color: aqua;
+                        transition: all 1s;
+                    }
+
+                    i.plus {
+                        @include absolute-center;
+                        opacity: 0;
+                        color: white;
+                        transition: all 1s;
+                    }
+                }
+
+                div.pictures:hover > .mask {
+                    opacity: 0.7;
+                }
+
+                div.pictures:hover > .plus {
+                    opacity: 1;
+                }
+
+                div.pictures:hover {
+                    transform: scale(2);
+                }
+
+                div.picture1 {
+                    background-image: url(portfolio/box_of_cookies.jpg);
+                }
+
+                div.picture2 {
+                    background-image: url(portfolio/chaotic_paint.jpg);
+                }
+
+                div.picture3 {
+                    background-image: url(portfolio/chestnut_on_bracket.jpg);
+                }
+
+                div.picture4 {
+                    background-image: url(portfolio/child_with_blue_paint.jpg);
+                }
+
+                div.picture5 {
+                    background-image: url(portfolio/house_with_blue_doors.jpg);
+                }
+
+                div.picture6 {
+                    background-image: url(portfolio/typing_on_laptop.jpg);
+                }
+            }
+        }
+    }
+}
+
+div.meet-team {
+    text-align: center;
+
+    h1#about {
+        margin-top: 100px;
+    }
+
+    div.face-box {
+        margin-top: 100px;
+    }
+
+    div.face-circle {
+        @include big-circle;
+    }
+
+    div.face-circle1 {
+        background-image: url(team/man-1.jpg);
+    }
+
+    div.face-circle2 {
+        background-image: url(team/man-2.jpg);
+    }
+
+    div.face-circle3 {
+        background-image: url(team/woman-1.jpg);
+    }
+    div.icon-circle {
+
+        @include small-circle;
+        margin: 0 auto;
+
+        i.ikona {
+            color: white;
+            @include absolute-center;
+        }
+    }
+
+    div.icon-circle:hover {
+        background-color: aqua;
+    }
+
+    p#team-text {
+        margin: 100px;
+    }
+}
+
+
+div.form-box {
+    height: 90vh;
+    background-image: url(footer/world-map.jpg);
+    background-position: center;
+    position: relative;
+    text-align: center;
+
+    div.form-holder {
+        @include absolute-center;
+
+
+        input,
+        textarea {
+            width: 100%;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            margin-top: 22px;
+            resize: none;
+        }
+
+        div.button-box {
+            margin-top: 20px;
+
+            button {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+div.footer-house {
+    height: 10vh;
+    padding: 20px;
+    text-align: center;
+
+    div.icon {
+        margin-top: 15px;
+
+        div.footer-icons {
+            @include small-circle;
+            
+            i.footer-ikona {
+                color: white;
+                @include absolute-center;
+            }
+        }
+        
+        div.footer-icons:hover {
+            background-color: aqua;
+        }
+    }
+}

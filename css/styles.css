@@ -1,0 +1,173 @@
+/*header*/
+a {
+  color: white; }
+
+div.header {
+  color: white;
+  position: relative; }
+  div.header div.pudelko {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+/*services*/
+div.drugi {
+  text-align: center; }
+
+div.ikony {
+  text-align: center; }
+  div.ikony div.kolko {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    border: 1px solid aqua;
+    background-color: aqua;
+    text-align: center;
+    position: relative;
+    margin: 0 auto; }
+    div.ikony div.kolko i.ikony-services {
+      color: white;
+      transition: all 0.70s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  div.ikony div.kolko:hover {
+    background-color: white;
+    transition: all 0.70s;
+    transform: rotate(720deg); }
+  div.ikony div.kolko:hover > i {
+    color: aqua; }
+
+/*portfolio*/
+div.portfolio {
+  padding: 20px;
+  background-color: gainsboro;
+  text-align: center; }
+  div.portfolio div.portfolio-box {
+    height: 320px; }
+    div.portfolio div.portfolio-box div.tlo {
+      height: 300px;
+      background-color: white; }
+      div.portfolio div.portfolio-box div.tlo div.border {
+        overflow: hidden; }
+        div.portfolio div.portfolio-box div.tlo div.border div.pictures {
+          height: 200px;
+          background-position: center;
+          position: relative;
+          transition-duration: 1s; }
+          div.portfolio div.portfolio-box div.tlo div.border div.pictures div.mask {
+            height: 200px;
+            opacity: 0;
+            background-color: aqua;
+            transition: all 1s; }
+          div.portfolio div.portfolio-box div.tlo div.border div.pictures i.plus {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            color: white;
+            transition: all 1s; }
+        div.portfolio div.portfolio-box div.tlo div.border div.pictures:hover > .mask {
+          opacity: 0.7; }
+        div.portfolio div.portfolio-box div.tlo div.border div.pictures:hover > .plus {
+          opacity: 1; }
+        div.portfolio div.portfolio-box div.tlo div.border div.pictures:hover {
+          transform: scale(2); }
+        div.portfolio div.portfolio-box div.tlo div.border div.picture1 {
+          background-image: url(portfolio/box_of_cookies.jpg); }
+        div.portfolio div.portfolio-box div.tlo div.border div.picture2 {
+          background-image: url(portfolio/chaotic_paint.jpg); }
+        div.portfolio div.portfolio-box div.tlo div.border div.picture3 {
+          background-image: url(portfolio/chestnut_on_bracket.jpg); }
+        div.portfolio div.portfolio-box div.tlo div.border div.picture4 {
+          background-image: url(portfolio/child_with_blue_paint.jpg); }
+        div.portfolio div.portfolio-box div.tlo div.border div.picture5 {
+          background-image: url(portfolio/house_with_blue_doors.jpg); }
+        div.portfolio div.portfolio-box div.tlo div.border div.picture6 {
+          background-image: url(portfolio/typing_on_laptop.jpg); }
+
+div.meet-team {
+  text-align: center; }
+  div.meet-team h1#about {
+    margin-top: 100px; }
+  div.meet-team div.face-box {
+    margin-top: 100px; }
+  div.meet-team div.face-circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background-position: center;
+    margin: 0 auto; }
+  div.meet-team div.face-circle1 {
+    background-image: url(team/man-1.jpg); }
+  div.meet-team div.face-circle2 {
+    background-image: url(team/man-2.jpg); }
+  div.meet-team div.face-circle3 {
+    background-image: url(team/woman-1.jpg); }
+  div.meet-team div.icon-circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: black;
+    position: relative;
+    margin: 0 auto; }
+    div.meet-team div.icon-circle i.ikona {
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  div.meet-team div.icon-circle:hover {
+    background-color: aqua; }
+  div.meet-team p#team-text {
+    margin: 100px; }
+
+div.form-box {
+  height: 90vh;
+  background-image: url(footer/world-map.jpg);
+  background-position: center;
+  position: relative;
+  text-align: center; }
+  div.form-box div.form-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    div.form-box div.form-holder input,
+    div.form-box div.form-holder textarea {
+      width: 100%;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px; }
+    div.form-box div.form-holder textarea {
+      margin-top: 22px;
+      resize: none; }
+    div.form-box div.form-holder div.button-box {
+      margin-top: 20px; }
+      div.form-box div.form-holder div.button-box button {
+        margin: 0 auto; }
+
+div.footer-house {
+  height: 10vh;
+  padding: 20px;
+  text-align: center; }
+  div.footer-house div.icon {
+    margin-top: 15px; }
+    div.footer-house div.icon div.footer-icons {
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      background-color: black;
+      position: relative; }
+      div.footer-house div.icon div.footer-icons i.footer-ikona {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    div.footer-house div.icon div.footer-icons:hover {
+      background-color: aqua; }
